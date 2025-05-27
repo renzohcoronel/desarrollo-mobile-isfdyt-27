@@ -1,12 +1,16 @@
 import { StyleSheet, View, Text } from 'react-native';
 
+interface CardComponentProps {
+    name: string;
+    age?: number;
+}
 
-export function CardComponent() {
+export function CardComponent(props: CardComponentProps) {
 
     return (
         <View>
-            <Text>Nombre: </Text>
-            <Text>Edad: </Text>
+            <Text>Nombre: { props.name }</Text>
+            <Text>Edad: { props.age }</Text>
         </View>
     );
 }

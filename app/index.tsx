@@ -6,9 +6,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <CardComponent />
+      <CardComponent name="Renzo" />
       <Text>Hello world!!!</Text>
       <StatusBar style="auto" />
+      <CardComponent name="Pedro" />
     </View>
   );
 }
